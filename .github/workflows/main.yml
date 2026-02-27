@@ -1,4 +1,6 @@
-name: Daily Repository Update - 24f2001786@ds.study.iitm.ac.in
+name: Daily Repository Update
+
+run-name: Daily Repository Update - 24f2001786@ds.study.iitm.ac.in
 
 on:
   schedule:
@@ -13,7 +15,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: 24f2001786@ds.study.iitm.ac.in - Add daily commit
+      - name: Add daily commit
         run: |
           echo "Updated at $(date -u)" >> daily-log.txt
           git config user.name "github-actions"
